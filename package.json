@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tail": " tailwindcss -i ./src/input.css -o ./main/style.css --watch"
+    "tail": " tailwindcss -i ./src/input.css -o ./public/style.css --watch"
   },
   "author": "",
   "license": "ISC",

@@ -5,7 +5,7 @@ let searchInputValue = ""; // Track search input value
 
 async function fetchData() {
   try {
-    const response = await fetch("books.json");
+    const response = await fetch("src/books.json");
     if (!response.ok) {
       throw new Error("Failed to fetch data");
     }
@@ -67,8 +67,8 @@ function filterData() {
   } else {
     searchInputValue = document.getElementById("search-navbar").value;
     // Trim whitespace
-    document.querySelector(".searchBar").value = "";
   }
+
   const startIndex = (currentPage - 1) * itemsPerPage;
   const endIndex = startIndex + itemsPerPage;
   let currentData = jsonData;
