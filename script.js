@@ -5,7 +5,7 @@ let searchInputValue = ""; // Track search input value
 
 async function fetchData() {
   try {
-    const response = await fetch("src/books.json");
+    const response = await fetch("/src/books.json");
     if (!response.ok) {
       throw new Error("Failed to fetch data");
     }
