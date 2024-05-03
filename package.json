@@ -1,10 +1,10 @@
 {
-  "name": "biz-books",
+  "name": "book-bahcesi",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
-    "tail": " tailwindcss -i ./src/input.css -o ./public/style.css --watch"
+    "tail": " tailwindcss -i ./src/input.css -o style.css --watch"
   },
   "author": "",
   "license": "ISC",
