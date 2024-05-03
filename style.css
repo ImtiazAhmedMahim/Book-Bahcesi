@@ -3547,10 +3547,6 @@ details.collapse summary::-webkit-details-marker {
   resize: both;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-4 {
   grid-template-columns: repeat(4, minmax(0, 1fr));
 }
@@ -3815,11 +3811,6 @@ details.collapse summary::-webkit-details-marker {
 .py-3 {
   padding-top: 0.75rem;
   padding-bottom: 0.75rem;
-}
-
-.py-4 {
-  padding-top: 1rem;
-  padding-bottom: 1rem;
 }
 
 .py-5 {
@@ -4236,11 +4227,6 @@ details.collapse summary::-webkit-details-marker {
     font-size: 1rem;
     line-height: 1.5rem;
   }
-
-  .max-\[320px\]\:text-lg {
-    font-size: 1.125rem;
-    line-height: 1.75rem;
-  }
 }
 
 @media (min-width: 768px) {
@@ -4274,10 +4260,6 @@ details.collapse summary::-webkit-details-marker {
 
   .md\:h-14 {
     height: 3.5rem;
-  }
-
-  .md\:w-52 {
-    width: 13rem;
   }
 
   .md\:w-auto {
