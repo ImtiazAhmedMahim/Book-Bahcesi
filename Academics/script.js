@@ -1,5 +1,5 @@
 let jsonData = [];
-const itemsPerPage = 150;
+const itemsPerPage = 49;
 let currentPage = 1;
 let searchInputValue = ""; // Track search input value
 
