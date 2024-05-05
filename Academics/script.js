@@ -3,6 +3,33 @@ const itemsPerPage = 49;
 let currentPage = 1;
 let searchInputValue = ""; // Track search input value
 
+//loading animation
+for (let i = 0; i < 10; i++) {
+  const allBooks = document.querySelector(".all-books");
+  let loadSkeleton = "";
+  loadSkeleton += `<div
+          class="grid grid-cols-[7rem_1fr] md:grid-cols-[13rem_1fr] hover:bg-gray-50 border-b transition duration-300 individual-books border-r border-l gap-2 animate-pulse load-skeleton"
+        >
+          <div class="h-40 w-32 bg-slate-200"></div>
+
+          <div
+            class="md:py-4 md:px-6 text-sm md:text-xl font-medium author mt-4 mb-2"
+          >
+            <div class="h-2 bg-slate-200 rounded mb-2 ml-4 mr-2"></div>
+            <div class="h-2 bg-slate-200 rounded mb-2 ml-4 mr-2"></div>
+            <div class="h-2 bg-slate-200 rounded ml-4 mr-2"></div>
+            <div class="md:mt-5 mt-3 ml-4">
+              <a
+                href=""
+                class="hover:scale-110 scale-100 transition-all duration-100 text-white py-2 px-4 rounded-md inline-block cursor-pointer download-btn bg-slate-200"
+              >
+              </a>
+            </div>
+          </div>
+        </div>`;
+  allBooks.innerHTML += loadSkeleton;
+}
+
 async function fetchData() {
   try {
     const response = await fetch("academicsBooks.json");
