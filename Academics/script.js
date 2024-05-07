@@ -170,6 +170,6 @@ document
 // Fetch data when the page loads
 fetchData();
 // search functionality
-document.getElementById("search-navbar").addEventListener("input", filterData);
+document.getElementById("search-navbar").addEventListener("search", filterData);
 // mobile search functionality
-document.querySelector(".searchBar").addEventListener("input", filterData);
+document.querySelector(".searchBar").addEventListener("search", filterData);
